@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Primeira Venda no Orgânico — eBook</title>
+  <meta name="description" content="Aprenda passo a passo como conseguir sua primeira venda de forma 100% orgânica. Estratégias simples para Instagram e TikTok." />
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#041726">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://www.youtube.com">
+  <link rel="preconnect" href="https://wa.me">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Primeira Venda no Orgânico — eBook">
+  <meta property="og:description" content="Passo a passo para sua primeira venda sem anúncios. Instagram, TikTok e copy que converte.">
+  <meta property="og:image" content="{{ url_for('static', filename='images/Gemini_Generated_Image_z6n6siz6n6siz6n6.png') }}">
+  <meta property="og:type" content="product">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Primeira Venda no Orgânico — eBook",
+  "image": ["{{ url_for('static', filename='images/Gemini_Generated_Image_z6n6siz6n6siz6n6.png') }}"],
+    "description": "Guia prático para conseguir sua primeira venda usando estratégias orgânicas no Instagram e TikTok.",
+    "brand": { "@type": "Brand", "name": "Primeira Venda no Orgânico" },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://wa.me/69993207217?text=Quero+comprar+o+eBook",
+      "priceCurrency": "BRL",
+      "price": "47.00",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#06151b;
+      --panel:#071722;
+      --accent:#00f0c6;
+      --accent-2:#3fe7b3;
+      --muted:#9fb7bd;
+      --card:#071f27;
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      --max-w:1200px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#021118 0%, #051922 100%);
+      color:#e9f7f5;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+    /* HERO with big image and overlay */
+    header.hero{
+      position:relative;
+      min-height:60vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px 18px 90px;
+      overflow:hidden;
+    }
+    .hero-inner{max-width:var(--max-w); width:100%; display:grid; grid-template-columns: 1fr 420px; gap:28px; align-items:center;}
+
+    .hero-media{
+      position:relative;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 30px 60px rgba(2,8,12,0.6), inset 0 -40px 80px rgba(1,7,10,0.7);
+      background: linear-gradient(180deg, rgba(6,21,27,0.6), rgba(3,9,12,0.6));
+    }
+
+    /* big hero image (car) */
+    .hero-media img{
+      width:100%;
+      height:100%;
+      min-height:360px;
+      object-fit:cover;
+      display:block;
+      transform: scale(1.02);
+      transition: transform 0.8s ease;
+    }
+    .hero-media:hover img{ transform: scale(1.04); }
+
+    /* overlay neon charts / elements to match the images */
+    .overlay-charts{
+      position:absolute;
+      left:0; right:0; top:0; bottom:0;
+      pointer-events:none;
+      mix-blend-mode:screen;
+    }
+    .chart{
+      position:absolute;
+      background:linear-gradient(90deg, rgba(0,240,198,0.06), rgba(63,231,179,0.06));
+      border-radius:10px;
+      padding:10px 12px;
+      backdrop-filter: blur(4px);
+      border:1px solid rgba(0,255,200,0.08);
+      box-shadow: 0 8px 28px rgba(0,200,160,0.04);
+      color:var(--accent-2);
+      font-weight:700;
+      font-size:0.9rem;
+      transform:translateZ(0);
+    }
+    .chart.left { left:22px; bottom:26px; width:180px;}
+    .chart.top { right:30px; top:22px; width:220px; text-align:right;}
+    .spark { position:absolute; left:18%; top:36%; filter:blur(0.6px); opacity:0.92; }
+
+    /* text column */
+    .hero-copy h1{font-size:2.2rem; margin:0 0 10px; line-height:1.05; letter-spacing: -0.5px;}
+    .hero-copy p.lead{color:var(--muted); margin:0 0 16px; font-size:1.05rem; max-width:60ch;}
+    .badge{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); color:var(--accent); font-weight:800; font-size:0.95rem; letter-spacing:0.6px;}
+
+    /* right column card (cover + bullets) */
+    .card-right{
+      background: linear-gradient(180deg, rgba(3,17,20,0.6), rgba(5,23,27,0.85));
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 18px 40px rgba(0,0,0,0.55);
+      border:1px solid rgba(255,255,255,0.03);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:12px;
+    }
+    .cover img{ width:100%; max-width:320px; border-radius:10px; object-fit:cover; display:block;}
+    .price{font-size:1.15rem; font-weight:900; color:var(--accent); margin-top:6px;}
+    .small-muted{color:rgba(200,230,225,0.8); font-size:0.92rem;}
+
+    /* CTA row */
+    .cta-row{display:flex; gap:12px; margin-top:8px; flex-wrap:wrap; justify-content:flex-start;}
+    .btn-primary{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#012018;
+      padding:12px 18px;
+      border-radius:12px;
+      font-weight:800;
+      text-decoration:none;
+      box-shadow:0 12px 36px rgba(3,190,150,0.14);
+      transition: transform .14s ease;
+    }
+    .btn-primary:hover{ transform:translateY(-4px); }
+
+    .btn-outline{ padding:11px 16px; border-radius:10px; background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--muted); text-decoration:none; font-weight:700; }
+
+    /* content card */
+    main.wrap{ max-width:var(--max-w); margin:-80px auto 60px; padding:0 18px 40px; }
+    .card{ background:linear-gradient(180deg,#04161a 0%, #072027 100%); border-radius:14px; padding:22px; box-shadow:0 20px 60px rgba(3,10,14,0.6); border:1px solid rgba(255,255,255,0.02); color: #dff8f0; }
+
+    .benefits-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:10px;}
+    .benefit{ background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:14px; border-radius:10px; border:1px solid rgba(255,255,255,0.02); min-height:92px;}
+    .benefit h4{ margin:0 0 8px; font-size:1.02rem; color:#e9fffa;}
+
+    /* video + guarantee area */
+    .video-wrap{ display:grid; grid-template-columns: 1fr 320px; gap:18px; margin-top:18px; align-items:start;}
+    .video-embed iframe{ width:100%; height:360px; border-radius:10px; border:0; box-shadow:0 20px 60px rgba(0,0,0,0.6); display:block; }
+
+    .guarantee{ background:linear-gradient(90deg, rgba(0,240,198,0.03), rgba(63,231,179,0.02)); padding:12px; border-radius:12px; border:1px solid rgba(0,255,200,0.06); color:var(--accent-2); font-weight:700; }
+
+    /* floating purchase */
+    .floating-cta{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:9999;
+    }
+    .floating-cta a{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#012018;
+      padding:14px 18px;
+      border-radius:999px;
+      box-shadow:0 18px 40px rgba(0,200,160,0.14);
+      text-decoration:none;
+      font-weight:900;
+    }
+
+    /* responsiveness */
+    @media(max-width:1000px){
+      .hero-inner{ grid-template-columns: 1fr; gap:18px; }
+      .video-wrap{ grid-template-columns:1fr; }
+      .video-embed iframe{ height:220px; }
+      .hero-copy h1{ font-size:1.6rem; text-align:center;}
+      .card-right{ align-items:center;}
+      .cta-row{ justify-content:center; }
+    }
+    @media(max-width:520px){
+      .hero{ padding-bottom:60px; }
+      .cover img{ max-width:230px; }
+      .badge{ font-size:0.86rem; }
+    }
+
+    /* subtle entrance animation */
+    .fade-up{ transform: translateY(12px); opacity:0; transition: all .6s cubic-bezier(.2,.9,.2,1); }
+    .fade-up.is-visible{ transform:none; opacity:1; }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="hero-inner">
+      <!-- left: media -->
+      <div class="hero-media fade-up" id="heroMedia">
+  <!-- Hero image: carro (use static/images/hero.png) -->
+  <img src="{{ url_for('static', filename='images/Gemini_Generated_Image_i3n0gui3n0gui3n0.png') }}" alt="Imagem destaque - carro e gráficos (marketing digital)" loading="lazy" />
+        <!-- overlay "charts" to match style -->
+        <div class="overlay-charts" aria-hidden="true">
+          <div class="chart left">+ 1.230 seguidores</div>
+          <div class="chart top">Crescimento 45% ↑</div>
+          <!-- SVG spark / grid decorations -->
+          <svg class="spark" width="280" height="140" viewBox="0 0 280 140" xmlns="http://www.w3.org/2000/svg" style="left:12%; top:44%; position:absolute;">
+            <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#00f0c6"/><stop offset="1" stop-color="#3fe7b3"/></linearGradient></defs>
+            <polyline points="0,110 30,80 60,90 90,60 120,70 150,30 180,50 210,20 240,40 270,10" fill="none" stroke="url(#g1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- right: copy + cover -->
+      <aside class="hero-copy" aria-label="Apresentação do produto">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px; justify-content:flex-start;">
+          <span class="badge">LANÇAMENTO</span>
+          <div style="color:var(--muted); font-weight:700; font-size:0.95rem;">Entrega Imediata • Suporte via WhatsApp</div>
+        </div>
+
+        <h1>Primeira Venda no Orgânico — Guia prático que realmente funciona</h1>
+        <p class="lead">Siga um passo-a-passo direto ao ponto com roteiros para Reels/TikTok, templates de mensagens e páginas, e estratégias aplicáveis mesmo sem seguidores.</p>
+
+        <div class="cta-row" role="region" aria-label="Chamada para ação principal">
+          <a class="btn-primary" href="https://wa.me/69993207217?text=Quero+comprar+o+eBook" id="buy-now-hero">Comprar pelo WhatsApp — R$8,99</a>
+          <a class="btn-outline" href="#conteudo">Ver o conteúdo</a>
+        </div>
+
+        <div style="margin-top:16px; display:flex; gap:12px; align-items:center;">
+          <div class="card-right" aria-hidden="false">
+            <div class="cover">
+              <img src="{{ url_for('static', filename='images/Gemini_Generated_Image_z6n6siz6n6siz6n6.png') }}" alt="Capa do eBook — Primeira Venda no Orgânico" loading="lazy" />
+            </div>
+            <div style="text-align:center; width:100%;">
+              <div class="price">R$8,99</div>
+              <div class="small-muted">Ebook + Bônus • Download imediato</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <!-- MAIN WRAP -->
+  <main class="wrap" id="conteudo" role="main">
+    <div class="card">
+
+      <!-- O que você vai aprender -->
+      <section aria-labelledby="o-que-voce-vai-aprender">
+        <h2 id="o-que-voce-vai-aprender">O que você vai aprender</h2>
+        <div class="benefits-grid" role="list">
+          <div class="benefit" role="listitem">
+            <h4>Oferta e posição</h4>
+            <p>Como criar uma oferta simples, irresistível e escalável — passo a passo com exemplos práticos.</p>
+          </div>
+          <div class="benefit" role="listitem">
+            <h4>Roteiros prontos</h4>
+            <p>5 roteiros para Reels/TikTok com gatilhos de conversão e instruções de gravação.</p>
+          </div>
+          <div class="benefit" role="listitem">
+            <h4>Copy que converte</h4>
+            <p>Templates de legendas e mensagens para transformar engajamento em DM e pagamento.</p>
+          </div>
+          <div class="benefit" role="listitem">
+            <h4>Prova social rápida</h4>
+            <p>Táticas para colher depoimentos reais e aumentar credibilidade mesmo no início.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conteúdo detalhado -->
+      <section aria-labelledby="conteudo-detalhado" style="margin-top:18px;">
+        <h2 id="conteudo-detalhado">Conteúdo do eBook</h2>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:8px;">
+          <div style="background:transparent; padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,0.02);">
+            <strong>Capítulo 1 — Mindset & Oferta</strong>
+            <p class="small-muted">Defina público, proposta e primeira oferta.</p>
+          </div>
+          <div style="background:transparent; padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,0.02);">
+            <strong>Capítulo 2 — Conteúdo que vende</strong>
+            <p class="small-muted">Modelos práticos de conteúdo diário com CTA estratégica.</p>
+          </div>
+          <div style="background:transparent; padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,0.02);">
+            <strong>Capítulo 3 — Copy & Mensagens</strong>
+            <p class="small-muted">Scripts para DM e sequência de follow-up.</p>
+          </div>
+          <div style="background:transparent; padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,0.02);">
+            <strong>Capítulo 4 — Entrega & Upsell</strong>
+            <p class="small-muted">Como entregar profissionalmente e aumentar ticket médio.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <h3 style="margin:8px 0;">Bônus</h3>
+          <ul class="small-muted">
+            <li>• 5 roteiros prontos (editáveis)</li>
+            <li>• Checklist de 7 dias para lançamento</li>
+            <li>• Template de página de vendas simplificada</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Video -->
+      <section aria-labelledby="video-explicativo" style="margin-top:16px;">
+        <h2 id="video-explicativo">Assista ao vídeo explicativo</h2>
+
+        <div class="video-wrap">
+          <div class="video-embed" aria-hidden="false">
+            <iframe src="https://www.youtube.com/embed/Lrwvxc9uXhc" title="Vídeo explicativo — Primeira Venda no Orgânico" allowfullscreen loading="lazy"></iframe>
+          </div>
+
+          <div style="min-width:220px;">
+            <div class="guarantee">
+              <div>
+                <strong>Garantia de 7 dias</strong>
+                <div style="font-weight:600; color:rgba(255,255,255,0.85); font-size:0.92rem; margin-top:6px;">Peça reembolso via WhatsApp se não ficar satisfeito.</div>
+              </div>
+              <div style="text-align:right">
+                <div style="font-weight:900; color:var(--accent); font-size:1.05rem;">Últimas <span id="stock">12</span> ofertas</div>
+                <div style="color:var(--muted); font-size:0.9rem; margin-top:6px;">Oferta por tempo limitado</div>
+              </div>
+            </div>
+
+            <div style="margin-top:12px; text-align:center;">
+              <a class="btn-primary" href="https://wa.me/69993207217?text=Quero+comprar+o+eBook" aria-label="Comprar pelo WhatsApp">Comprar agora — R$8,99</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="depoimentos" style="margin-top:18px;">
+        <h2>Depoimentos</h2>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:10px; margin-top:8px;">
+          <div style="padding:12px; border-radius:10px; background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);">
+            <strong>Ana S.</strong>
+            <p class="small-muted">"Vendi no terceiro dia seguindo os roteiros. Recomendo!"</p>
+          </div>
+          <div style="padding:12px; border-radius:10px; background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);">
+            <strong>Lucas M.</strong>
+            <p class="small-muted">"Mais DMs qualificadas e vendas reais."</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section style="margin-top:18px; text-align:center;">
+        <div style="color:var(--muted); margin-bottom:10px;">Preço promocional — oferta limitada</div>
+        <a class="btn-primary" href="https://wa.me/69993207217?text=Quero+comprar+o+eBook" id="buy-now-footer">Comprar pelo WhatsApp — R$8,99</a>
+      </section>
+
+      <footer style="margin-top:18px; text-align:center; color:var(--muted); font-size:0.92rem;">
+        <p>&copy; 2025 Primeira Venda no Orgânico. Todos os direitos reservados.</p>
+        <p>Contato: <a href="https://wa.me/69993207217" style="color:var(--accent); text-decoration:none;">WhatsApp</a></p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Floating CTA -->
+  <div class="floating-cta" role="complementary" aria-label="Comprar pelo WhatsApp">
+    <a href="https://wa.me/69993207217?text=Quero+comprar+o+eBook" id="floating-buy">
+      <!-- Cart / message icon -->
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.7 7.3C15.9 6.5 15 6 13.9 5.8C12.8 5.6 11.6 5.9 10.6 6.6C9.6 7.3 8.9 8.4 8.7 9.6L8 12L5 12C4.5 12 4 12.5 4 13C4 18 8 22 13 22C13.5 22 14 21.5 14 21V18L16.7 17.3C17.9 17 19 16.3 19.7 15.3C20.4 14.3 20.7 13.1 20.5 12C20.3 10.9 19.8 10 19 9.2L16.7 7.3Z" fill="#012018"/>
+      </svg>
+      Comprar
+    </a>
+  </div>
+
+  <script>
+    // small UI scripts
+    (function(){
+      // visibility animation
+      function reveal(){
+        document.querySelectorAll('.fade-up').forEach(function(n){ n.classList.add('is-visible'); });
+      }
+      window.setTimeout(reveal, 180);
+
+      // stock demo
+      var stockEl = document.getElementById('stock');
+      var stock = 12;
+      function maybeDecrease(){
+        if(stock > 2 && Math.random() < 0.22){
+          stock--; stockEl.textContent = stock;
+        }
+      }
+      setInterval(maybeDecrease, 8000);
+
+      // keyboard shortcut to focus buy
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'b' || e.key === 'B'){
+          var btn = document.getElementById('buy-now-hero');
+          if(btn) btn.focus();
+        }
+      });
+
+      // analytics console hook
+      ['buy-now-hero','buy-now-footer','floating-buy'].forEach(function(id){
+        var el = document.getElementById(id);
+        if(el){
+          el.addEventListener('click', function(){ console.log('click: buy - ' + id + ' - ' + new Date().toISOString()); });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
